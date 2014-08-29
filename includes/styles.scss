@@ -2,7 +2,7 @@
 
 
 /* Map Container */
-.map-wrap {
+#gmpl-wrapper {
 	z-index: 99;
 	position: relative;
 	clear: both;
@@ -14,11 +14,11 @@
 	box-shadow:         0px 30px 40px -5px rgba(0, 0, 0, 0.5);
 	*/
 }
-#3damap { width:100%; height:400px; }
-#3damap * { overflow: visible; }
+#gmpl-map { width:100%; height:400px; }
+#gmpl-map * { overflow: visible; }
 
 /* Initial state - "map disabled" mode */
-.map-overlay {
+.gmpl-overlay {
 	z-index: 999;
 	position: absolute;
 	width: 100%;
@@ -26,7 +26,7 @@
 	background-color: rgba(0,0,0,0.1);
 	display: none;
 }
-.map-overlay strong {
+.gmpl-overlay strong {
 	position: absolute;
 	top: 10%;
 	text-align: center;
@@ -40,11 +40,11 @@
 	padding: 10px 0;
 	display: block;
 }
-.map-overlay strong { font-style: normal; }
-a.map-overlay:hover { background-color: rgba(242,242,242,0.6); }
+.gmpl-overlay strong { font-style: normal; }
+a.gmpl-overlay:hover { background-color: rgba(242,242,242,0.6); }
 
 /* Active state - "map enabled" mode */
-.map-overlay-lock {
+.gmpl-btn-lock {
 	z-index: 99999;
 	position: fixed;
 	width: 100%;
@@ -52,7 +52,7 @@ a.map-overlay:hover { background-color: rgba(242,242,242,0.6); }
 	text-align: center;
 	display: none;
 }
-.map-overlay-lock strong {
+.gmpl-btn-lock strong {
 	font-size: 26px;
 	font-family: Sans-Serif;
 	font-weight: 600;
@@ -66,7 +66,7 @@ a.map-overlay:hover { background-color: rgba(242,242,242,0.6); }
 	line-height: 30px;
 	display: block;
 }
-a.map-overlay-lock:hover strong {
+a.gmpl-btn-lock:hover strong {
 	/*
 	color: #EEC43D;
 	background-color: #2A2B2C;
@@ -80,17 +80,17 @@ a.map-overlay-lock:hover strong {
 
 
 
-a.map-overlay strong { text-transform: uppercase; }
-a.map-overlay strong span.touch { display: inline; }
-a.map-overlay strong span.screen { display: none; }
+a.gmpl-overlay strong { text-transform: uppercase; }
+a.gmpl-overlay strong span.touch { display: inline; }
+a.gmpl-overlay strong span.screen { display: none; }
 
 // TODO: Modify screen dimensions to be more precise for touch devices
 
 /* Overlay adjustments for desktop devices (over 992px) */
 @media (min-width: 992px) {
-	a.map-overlay strong span.touch { display: none; }
-	a.map-overlay strong span.screen { display: inline; }
-	.map-overlay-lock a {
+	a.gmpl-overlay strong span.touch { display: none; }
+	a.gmpl-overlay strong span.screen { display: inline; }
+	.gmpl-btn-lock a {
 		padding: 38px 0;
 		font-size: 30px;
 		line-height: 29px;
