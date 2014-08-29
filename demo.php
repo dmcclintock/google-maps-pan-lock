@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Google Maps Pan Lock</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="includes/styles.css">
 
 	<!-- Begin Google Maps API, must load before DOM -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3abDeXiFejCuhSme78fem_Ck7UBBk6Fw&sensor=false"></script>
@@ -40,6 +40,6 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="includes/scripts.js"></script>
 </body>
 </html>
