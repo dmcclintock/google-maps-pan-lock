@@ -17,6 +17,7 @@
 				// styles: []
 			};
 			var mapElement = document.getElementById('3damap');
+			// var mapElement = document.getElementById('gmpl-map');
 			var map = new google.maps.Map(mapElement, mapOptions);
 		}
 	</script>
@@ -25,27 +26,34 @@
 </head>
 <body>
 
-	<!-- "Lock Map" button. Defaults to display:none, visible while map is unlocked. -->
-	<a href="#" class="map-overlay-lock">
-		<strong>Lock Map</strong>
-	</a>
+	<!--
 
-	<!-- Div wrap to set overlay -->
+			============== DIV ID/CLASS NAME CHANGES: ==============
+
+			.map-overlay-lock 								=			.gmpl-btn-lock
+			#mapcontainer 										=			#gmpl-wrapper
+			.map-overlay 											= 		.gmpl-overlay
+			#3damap 													= 		#gmpl-map
+
+			NOTE: Commented lines will replace those directly above
+						them once ID/CLASS changes are made.
+	-->
+
+	<a href="#" class="map-overlay-lock"><strong>Lock Map</strong></a>
+	<!-- <a href="#" class="gmpl-btn-lock"><strong>Lock Map</strong></a> -->
+	<!-- ^ TOGGLE ACTIVE, INITIALLY INACTIVE -->
+
 	<div id="mapcontainer" class="map-wrap">
+	<!-- <div id="gmpl-wrapper"> -->
 
-		<!-- "Unlock Map" button & opaque overlay. Defaults to display:block, hidden while map is unlocked. -->
-		<a href="#" class="map-overlay active" id="mapoverlayshadow">
-			<strong>
-				<span class="touch">Tap </span> <!-- For Touch Displays -->
-				<span class="screen">Click </span> <!-- For Screen Displays -->
-				to pan map
-			</strong>
+		<a href="#" class="map-overlay active">
+		<!-- <a href="#" class="gmpl-overlay active"> -->
+		<!-- ^ TOGGLE ACTIVE, LOADS ACTIVE -->
+			<strong><span class="touch">Tap </span><span class="screen">Click </span>to pan map</strong>
 		</a>
-
-		<!-- Google Map Embed -->
 		<div id="3damap" style="width: 100%; height: 400px; position: relative; overflow: hidden; -webkit-transform: translateZ(0px); background-color: #F2F2F2;"></div>
-
-	</div><!-- // END #mapcontainer -->
+		<!-- <div id="gmpl-map" style="..." -->
+	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="includes/scripts.js"></script>

@@ -1,8 +1,5 @@
 /* Map Styles */
-a.hide-overlay {
-  display: none; }
-
-/* Container */
+/* Map Container */
 .map-wrap {
   z-index: 99;
   position: relative;
@@ -119,18 +116,5 @@ a.map-overlay strong span.screen {
     width: 600px !important;
     padding: 0 0 10px 0;
     margin: 25px 0px 20px 0px; } }
-/* Responsive styles */
-@media screen and (min-width: 0px) and (max-width: 970px) {
-  .google-map-placeholder, #contactform {
-    width: 100% !important; }
-
-  #contactform .commentfield input, #contactform .commentfieldarea textarea {
-    width: 95%; }
-
-  #contactform .contactbutton .contact-button {
-    float: none; }
-
-  .contactbutton {
-    text-align: center; } }
 .active {
-  display: block; }
+  display: block !important; }

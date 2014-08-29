@@ -1,15 +1,7 @@
 /* Map Styles */
 
 
-
-
-
-
-
-
-a.hide-overlay { display: none; }
-
-/* Container */
+/* Map Container */
 .map-wrap {
 	z-index: 99;
 	position: relative;
@@ -92,6 +84,8 @@ a.map-overlay strong { text-transform: uppercase; }
 a.map-overlay strong span.touch { display: inline; }
 a.map-overlay strong span.screen { display: none; }
 
+// TODO: Modify screen dimensions to be more precise for touch devices
+
 /* Overlay adjustments for desktop devices (over 992px) */
 @media (min-width: 992px) {
 	a.map-overlay strong span.touch { display: none; }
@@ -115,15 +109,4 @@ a.map-overlay strong span.screen { display: none; }
 	}
 }
 
-
-/* Responsive styles */
-
-@media screen and (min-width:0px) and (max-width:970px) {
-	.google-map-placeholder ,#contactform {width:100% !important;}
-	#contactform .commentfield input ,#contactform .commentfieldarea textarea{width:95%;}
-	#contactform .contactbutton .contact-button {float:none;}
-	.contactbutton{text-align:center}
-}
-
-
-.active { display: block; }
+.active { display: block !important; }
