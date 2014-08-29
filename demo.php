@@ -8,6 +8,7 @@
 	<!-- Begin Google Maps API -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3abDeXiFejCuhSme78fem_Ck7UBBk6Fw&sensor=false"></script>
 	<script>
+<<<<<<< HEAD
 		google.maps.event.addDomListener(window, 'load', init);
 		function init() {
 			var mapOptions = {
@@ -20,6 +21,11 @@
 			// var mapElement = document.getElementById('gmpl-map');
 			var map = new google.maps.Map(mapElement, mapOptions);
 		}
+=======
+		google.maps.event.addDomListener( window, 'load', function() {
+	var mapOptions = { zoom: 10, mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(43.020763, -85.741734) }, mapElement = document.getElementById( '3damap' ), map = new google.maps.Map( mapElement, mapOptions );
+});
+>>>>>>> FETCH_HEAD
 	</script>
 	<!-- // END Google Maps API -->
 
