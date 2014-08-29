@@ -5,7 +5,7 @@
 	<title>Google Maps Pan Lock</title>
 	<link rel="stylesheet" type="text/css" href="includes/styles.css">
 
-	<!-- Begin Google Maps API, must load before DOM -->
+	<!-- Begin Google Maps API -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3abDeXiFejCuhSme78fem_Ck7UBBk6Fw&sensor=false"></script>
 	<script>
 		google.maps.event.addDomListener(window, 'load', init);
@@ -20,13 +20,13 @@
 			var map = new google.maps.Map(mapElement, mapOptions);
 		}
 	</script>
-	<!-- // End Google Maps API -->
+	<!-- // END Google Maps API -->
 
 </head>
 <body>
 
 	<!-- "Lock Map" button. Defaults to display:none, visible while map is unlocked. -->
-	<a href="#" class="map-overlay-lock hide-overlay">
+	<a href="#" class="map-overlay-lock">
 		<strong>Lock Map</strong>
 	</a>
 
@@ -34,7 +34,7 @@
 	<div id="mapcontainer" class="map-wrap">
 
 		<!-- "Unlock Map" button & opaque overlay. Defaults to display:block, hidden while map is unlocked. -->
-		<a href="#" class="map-overlay" id="mapoverlayshadow">
+		<a href="#" class="map-overlay active" id="mapoverlayshadow">
 			<strong>
 				<span class="touch">Tap </span> <!-- For Touch Displays -->
 				<span class="screen">Click </span> <!-- For Screen Displays -->
@@ -45,7 +45,7 @@
 		<!-- Google Map Embed -->
 		<div id="3damap" style="width: 100%; height: 400px; position: relative; overflow: hidden; -webkit-transform: translateZ(0px); background-color: #F2F2F2;"></div>
 
-	</div><!-- // End #mapcontainer -->
+	</div><!-- // END #mapcontainer -->
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="includes/scripts.js"></script>

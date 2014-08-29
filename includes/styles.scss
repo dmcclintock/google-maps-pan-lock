@@ -32,7 +32,7 @@ a.hide-overlay { display: none; }
 	width: 100%;
 	height: 400px;
 	background-color: rgba(0,0,0,0.1);
-	display: block;
+	display: none;
 }
 .map-overlay strong {
 	position: absolute;
@@ -58,7 +58,7 @@ a.map-overlay:hover { background-color: rgba(242,242,242,0.6); }
 	width: 100%;
 	height: 40px;
 	text-align: center;
-	display: block;
+	display: none;
 }
 .map-overlay-lock strong {
 	font-size: 26px;
@@ -124,3 +124,6 @@ a.map-overlay strong span.screen { display: none; }
 	#contactform .contactbutton .contact-button {float:none;}
 	.contactbutton{text-align:center}
 }
+
+
+.active { display: block; }

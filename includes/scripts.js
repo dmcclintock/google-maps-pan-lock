@@ -10,14 +10,14 @@ jQuery(document).ready(function($){
 
 	overlay.click(function(event){
 		event.preventDefault();
-		$(this).addClass("hide-overlay");
-		overlayLock.removeClass("hide-overlay");
+		$(this).removeClass("active");
+		overlayLock.addClass("active");
 	});
 
 	overlayLock.click(function(event){
 		event.preventDefault();
-		$(this).addClass("hide-overlay");
-		overlayLock.removeClass("hide-overlay");
+		$(this).removeClass("active");
+		overlay.addClass("active");
 	});
 });
 
