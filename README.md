@@ -7,8 +7,8 @@ This plugin is designed to provide a slightly more user-friendly UX for webpages
 
 #### Plugin Options
 
-- API Key [Instructions](https://developers.google.com/maps/documentation/javascript/tutorial#api_key) - text input
-- Zoom level - Dropdown (default to 10)
+- API Key - Text Input (Link to [Instructions](https://developers.google.com/maps/documentation/javascript/tutorial#api_key))
+- Zoom Level - Dropdown (default to 10)
 - Map Type - Dropdown (roadmap/terrain/hybrid)
 - Coordinates - Address lookup, populates lat/long text inputs using Geocoding API (see [this](https://developers.google.com/maps/documentation/javascript/v2/services?csw=1#Geocoding) and [this](https://developers.google.com/maps/documentation/geocoding/index#geocoding))
 - Styles - Add this later
