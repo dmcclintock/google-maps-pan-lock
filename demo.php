@@ -3,10 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Google Maps Pan Lock</title>
-
-	<!-- Enqueue styles & scripts -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script type="text/javascript" src="scripts.js"></script>
 
 	<!-- Essential Google Maps API, must load before DOM -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3abDeXiFejCuhSme78fem_Ck7UBBk6Fw&sensor=false"></script>
@@ -55,7 +52,6 @@
 			<strong><i class="fa fa-unlock-alt fa-fw"></i> Lock Map</strong>
 		</a>
 	</header>
-
 	<div id="mainwrap">
 		<div id="mapcontainer" class="map-wrap">
 			<a href="#" class="map-overlay" id="mapoverlayshadow">
@@ -68,5 +64,7 @@
 			<div id="3damap" style="width: 100%; height: 400px; position: relative; overflow: hidden; -webkit-transform: translateZ(0px); background-color: #F2F2F2;"></div>
 		</div>
 	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
