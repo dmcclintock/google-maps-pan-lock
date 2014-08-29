@@ -4,20 +4,21 @@
    Revised code by J
    ========================================================================== */
 
-jQuery(document).ready(function($){
-	var overlay = $("a.map-overlay");
-	var overlayLock = $("a.map-overlay-lock");
+jQuery(document).ready( function($) {
+	var o = $('a.map-overlay'), // overlay(el)
+			l = $('a.map-overlay-lock'),
+			a = 'active'; // lock(el)
 
-	overlay.click(function(event){
+	o.click( function(event) {
 		event.preventDefault();
-		$(this).removeClass("active");
-		overlayLock.addClass("active");
+		$(this).removeClass( a );
+		l.addClass( a );
 	});
 
-	overlayLock.click(function(event){
+	l.click( function(event) {
 		event.preventDefault();
-		$(this).removeClass("active");
-		overlay.addClass("active");
+		$(this).removeClass( a );
+		o.addClass( a );
 	});
 });
 
