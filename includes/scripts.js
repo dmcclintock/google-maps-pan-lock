@@ -5,8 +5,8 @@
    ========================================================================== */
 
 jQuery(document).ready( function($) {
-	var o = $('a.map-overlay'), // overlay(el)
-			l = $('a.map-overlay-lock'),
+	var o = $('a.gmpl-overlay'), // overlay(el)
+			l = $('a.gmpl-btn-lock'),
 			a = 'active'; // lock(el)
 
 	o.click( function(event) {
