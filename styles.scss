@@ -1,23 +1,11 @@
 /* Map Styles */
 
-.contact-left {
-	width: 100%;
-}
-.contact-right {
-	float: left;
-	width: 100% !important;
-	padding: 0 0 10px 0;
-	margin: 10px 0px 20px 0px;
-}
-body.page-template-contact-php #footer { top: 0; }
-body.page-template-contact-php .posttext { text-align: center !important ; }
 
-#footerb .copyright a { color: black; font-style: italic; font-weight: 600; }
-#footerb .copyright a:hover { color: #ECECEC; }
 
-@media (max-width: 970px) {
-	#footerb { padding: 5px 0; }
-}
+
+
+
+
 
 a.hide-overlay { display: none; }
 
@@ -52,7 +40,7 @@ a.hide-overlay { display: none; }
 	text-align: center;
 	width: 100%;
 	font-size: 30px;
-	font-family: Yanone Kaffeesatz;
+	font-family: Sans-Serif;
 	font-weight: 600;
 	line-height: 30px;
 	color: #2A2B2C;
@@ -60,39 +48,8 @@ a.hide-overlay { display: none; }
 	padding: 10px 0;
 	display: block;
 }
-.map-overlay2 {
-	z-index: 999;
-	position: absolute;
-	width: 100%;
-	height: 400px;
-	background-color: rgba(0,0,0,0.1);
-	display: block;
-}
-.map-overlay2 strong {
-	position: absolute;
-	top: 10px;
-	text-align: center;
-	width: 100%;
-	font-size: 20px;
-	font-family: Arial;
-	font-weight: 600;
-	line-height: 20px;
-	color: #2A2B2C;
-	text-shadow: 0px 1px 1px #FFF;
-	text-transform: uppercase;
-	padding: 10px 0;
-	display: block;
-}
-.map-overlay strong i,
-.map-overlay2 strong i {
-/*		display: block;
-	margin: 10px auto;
-*/	 }
-.map-overlay strong em,
-.map-overlay2 strong em { font-style: normal; }
-.map-overlay strong em.text-large { display: none; }
-a.map-overlay:hover,
-a.map-overlay2:hover { background-color: rgba(242,242,242,0.6); }
+.map-overlay strong { font-style: normal; }
+a.map-overlay:hover { background-color: rgba(242,242,242,0.6); }
 
 /* Active state - "map enabled" mode */
 .map-overlay-lock {
@@ -105,7 +62,7 @@ a.map-overlay2:hover { background-color: rgba(242,242,242,0.6); }
 }
 .map-overlay-lock strong {
 	font-size: 26px;
-	font-family: Yanone Kaffeesatz;
+	font-family: Sans-Serif;
 	font-weight: 600;
 	background-color: #2A2B2C;
 	color: #EEC43D;
@@ -129,11 +86,17 @@ a.map-overlay-lock:hover strong {
 	color: #2A2B2C;
 */	}
 
+
+
+a.map-overlay strong { text-transform: uppercase; }
+a.map-overlay strong span.touch { display: inline; }
+a.map-overlay strong span.browser { display: none; }
+
 /* Overlay adjustments for desktop devices (over 992px) */
 @media (min-width: 992px) {
-	.map-overlay strong em { display: none; }
-	.map-overlay strong em.text-large { display: inline; }
-	.map-overlay-lock strong {
+	a.map-overlay strong span.touch { display: none; }
+	a.map-overlay strong span.browser { display: inline; }
+	.map-overlay-lock a {
 		padding: 38px 0;
 		font-size: 30px;
 		line-height: 29px;

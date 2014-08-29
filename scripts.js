@@ -1,5 +1,32 @@
 /* Maps Scripts */
 
+/* ==========================================================================
+   Revised code by J
+   ========================================================================== */
+
+jQuery(document).ready(function($){
+	var overlay = $("a.map-overlay");
+	var overlayLock = $("a.map-overlay-lock");
+
+	overlay.click(function(event){
+		event.preventDefault();
+		$(this).addClass("hide-overlay");
+		overlayLock.removeClass("hide-overlay");
+	});
+
+	overlayLock.click(function(event){
+		event.preventDefault();
+		$(this).addClass("hide-overlay");
+		overlayLock.removeClass("hide-overlay");
+	});
+});
+
+
+/* ==========================================================================
+   Original code by Dan
+   ========================================================================== */
+
+/*
 jQuery(document).ready(function($){
 	var overlay = $("a.map-overlay");
 	var overlay2 = $("a.map-overlay2");
@@ -43,6 +70,7 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+*/
 
 /* ==========================================================================
    Sandbox code, kept for reference
