@@ -1,0 +1,163 @@
+/* Map Styles */
+
+.contact-left {
+	width: 100%;
+}
+.contact-right {
+	float: left;
+	width: 100% !important;
+	padding: 0 0 10px 0;
+	margin: 10px 0px 20px 0px;
+}
+body.page-template-contact-php #footer { top: 0; }
+body.page-template-contact-php .posttext { text-align: center !important ; }
+
+#footerb .copyright a { color: black; font-style: italic; font-weight: 600; }
+#footerb .copyright a:hover { color: #ECECEC; }
+
+@media (max-width: 970px) {
+	#footerb { padding: 5px 0; }
+}
+
+a.hide-overlay { display: none; }
+
+/* Container */
+.map-wrap {
+	z-index: 99;
+	position: relative;
+	clear: both;
+	background-color: #2A2B2C;
+	border-top: 1px solid #2A2B2C;
+/*
+-moz-box-shadow:    0px 30px 40px -5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 30px 40px -5px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 30px 40px -5px rgba(0, 0, 0, 0.5);
+	*/
+}
+#3damap { width:100%; height:400px; }
+#3damap * { overflow: visible; }
+
+/* Initial state - "map disabled" mode */
+.map-overlay {
+	z-index: 999;
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.1);
+	display: block;
+}
+.map-overlay strong {
+	position: absolute;
+	top: 10%;
+	text-align: center;
+	width: 100%;
+	font-size: 30px;
+	font-family: Yanone Kaffeesatz;
+	font-weight: 600;
+	line-height: 30px;
+	color: #2A2B2C;
+	text-shadow: 0px 1px 1px #FFF;
+	padding: 10px 0;
+	display: block;
+}
+.map-overlay2 {
+	z-index: 999;
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.1);
+	display: block;
+}
+.map-overlay2 strong {
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: 600;
+	line-height: 20px;
+	color: #2A2B2C;
+	text-shadow: 0px 1px 1px #FFF;
+	text-transform: uppercase;
+	padding: 10px 0;
+	display: block;
+}
+.map-overlay strong i,
+.map-overlay2 strong i {
+/*		display: block;
+	margin: 10px auto;
+*/	 }
+.map-overlay strong em,
+.map-overlay2 strong em { font-style: normal; }
+.map-overlay strong em.text-large { display: none; }
+a.map-overlay:hover,
+a.map-overlay2:hover { background-color: rgba(242,242,242,0.6); }
+
+/* Active state - "map enabled" mode */
+.map-overlay-lock {
+	z-index: 99999;
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	display: block;
+}
+.map-overlay-lock strong {
+	font-size: 26px;
+	font-family: Yanone Kaffeesatz;
+	font-weight: 600;
+	background-color: #2A2B2C;
+	color: #EEC43D;
+	border-bottom: 5px solid #EEC43D;
+	padding: 15px;
+	text-transform: uppercase;
+	display: block;
+	top: 0;
+	line-height: 30px;
+	display: block;
+}
+a.map-overlay-lock:hover strong {
+	/*
+	color: #EEC43D;
+	background-color: #2A2B2C;
+	*/
+	background-color: #404040;
+	color: #EEC43D;
+	border-bottom: 5px solid #EEC43D;
+/*		background-color: #EEC43D;
+	color: #2A2B2C;
+*/	}
+
+/* Overlay adjustments for desktop devices (over 992px) */
+@media (min-width: 992px) {
+	.map-overlay strong em { display: none; }
+	.map-overlay strong em.text-large { display: inline; }
+	.map-overlay-lock strong {
+		padding: 38px 0;
+		font-size: 30px;
+		line-height: 29px;
+	}
+	.contact-left {
+		float: left;
+		width: 300px;
+		padding: 0 0 10px 0;
+		margin: 25px 0px 20px 0px;
+	}
+	.contact-right {
+		float: right;
+		width: 600px !important;
+		padding: 0 0 10px 0;
+		margin: 25px 0px 20px 0px;
+	}
+}
+
+
+/* Responsive styles */
+
+@media screen and (min-width:0px) and (max-width:970px) {
+	.google-map-placeholder ,#contactform {width:100% !important;}
+	#contactform .commentfield input ,#contactform .commentfieldarea textarea{width:95%;}
+	#contactform .contactbutton .contact-button {float:none;}
+	.contactbutton{text-align:center}
+}
