@@ -90,12 +90,12 @@ a.map-overlay-lock:hover strong {
 
 a.map-overlay strong { text-transform: uppercase; }
 a.map-overlay strong span.touch { display: inline; }
-a.map-overlay strong span.browser { display: none; }
+a.map-overlay strong span.screen { display: none; }
 
 /* Overlay adjustments for desktop devices (over 992px) */
 @media (min-width: 992px) {
 	a.map-overlay strong span.touch { display: none; }
-	a.map-overlay strong span.browser { display: inline; }
+	a.map-overlay strong span.screen { display: inline; }
 	.map-overlay-lock a {
 		padding: 38px 0;
 		font-size: 30px;

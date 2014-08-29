@@ -92,7 +92,7 @@ a.map-overlay strong {
 a.map-overlay strong span.touch {
   display: inline; }
 
-a.map-overlay strong span.browser {
+a.map-overlay strong span.screen {
   display: none; }
 
 /* Overlay adjustments for desktop devices (over 992px) */
@@ -100,7 +100,7 @@ a.map-overlay strong span.browser {
   a.map-overlay strong span.touch {
     display: none; }
 
-  a.map-overlay strong span.browser {
+  a.map-overlay strong span.screen {
     display: inline; }
 
   .map-overlay-lock a {
